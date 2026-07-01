@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Admin pages should not be indexed
+Disallow: /admin/
+Disallow: /admin/*
+
+# Sitemap
+Sitemap: https://yourdomain.com/sitemap.xml

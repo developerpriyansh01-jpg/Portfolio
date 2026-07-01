@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 200">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a4a4a"/>
+      <stop offset="100%" stop-color="#333333"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Fin -->
+  <polygon points="35,100 10,120 15,130 35,115" fill="#757575"/>
+  <!-- Right Fin -->
+  <polygon points="65,100 90,120 85,130 65,115" fill="#757575"/>
+
+  <!-- Left Bottom Fin -->
+  <polygon points="35,140 10,170 15,185 35,180" fill="#757575"/>
+  <!-- Right Bottom Fin -->
+  <polygon points="65,140 90,170 85,185 65,180" fill="#757575"/>
+
+  <!-- Main Body -->
+  <path d="M 50 10 C 65 40, 65 70, 65 170 L 35 170 C 35 70, 35 40, 50 10 Z" fill="url(#bodyGrad)"/>
+  
+  <!-- Exhaust Nozzle -->
+  <polygon points="40,170 60,170 62,185 38,185" fill="#757575"/>
+
+  <!-- Cyan Top Band -->
+  <rect x="36" y="60" width="28" height="10" fill="#00bcd4"/>
+
+  <!-- Cyan Upper Vertical Stripe -->
+  <rect x="47" y="80" width="6" height="30" rx="3" fill="#00bcd4"/>
+
+  <!-- Body Separation Line -->
+  <rect x="35" y="120" width="30" height="3" fill="#666666"/>
+
+  <!-- Cyan Lower Vertical Stripe -->
+  <rect x="47" y="130" width="6" height="40" rx="3" fill="#00bcd4"/>
+</svg>
