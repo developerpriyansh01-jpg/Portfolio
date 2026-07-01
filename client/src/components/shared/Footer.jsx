@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiTwitter, FiInstagram, FiMail, FiPhone, FiMapPin, FiHeart } from 'react-icons/fi';
 import { SiLeetcode } from 'react-icons/si';
-import logoImg from '/logo2.jpeg';
+const logoImg = '/logo2.jpeg';
 
 const quickLinks = [
   { label: 'About', id: 'about' },

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 import { FiDownload } from 'react-icons/fi';
 import { useScrollPosition } from '../../hooks/useScrollPosition';
-import logoImg from '/logo2.jpeg';
+const logoImg = '/logo2.jpeg';
 
 
 const navLinks = [

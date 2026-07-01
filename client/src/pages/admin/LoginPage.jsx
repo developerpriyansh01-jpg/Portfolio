@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { FiMail, FiLock, FiLogIn } from 'react-icons/fi';
 import { useAuth } from '../../context/AuthContext';
-import logoImg from '/logo2.jpeg';
+const logoImg = '/logo2.jpeg';
 
 export default function LoginPage() {
   const { login, isAuthenticated, loading } = useAuth();

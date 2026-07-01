@@ -7,7 +7,7 @@ import {
   FiMenu, FiX, FiLayers, FiTool, FiClock,
 } from 'react-icons/fi';
 import { useAuth } from '../context/AuthContext';
-import logoImg from '/logo2.jpeg';
+const logoImg = '/logo2.jpeg';
 
 const navItems = [
   { to: '/admin', icon: FiGrid, label: 'Dashboard', end: true },
