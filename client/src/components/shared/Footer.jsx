@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiTwitter, FiInstagram, FiMail, FiPhone, FiMapPin, FiHeart } from 'react-icons/fi';
 import { SiLeetcode } from 'react-icons/si';
-const logoImg = '/logo2.jpeg';
 
 const quickLinks = [
   { label: 'About', id: 'about' },
@@ -38,15 +37,20 @@ export default function Footer({ profile, totalVisitors }) {
           {/* Brand */}
           <div className="lg:col-span-2 space-y-5">
             <div className="flex items-center gap-3">
-              <img 
-                src={logoImg} 
-                alt="Logo" 
-                className="w-auto h-12 object-contain"
-                style={{ 
-                  mixBlendMode: 'screen',
-                  filter: 'drop-shadow(0 0 8px rgba(0,212,255,0.4))'
+              <span
+                style={{
+                  fontFamily: "'Inter', 'Outfit', sans-serif",
+                  fontWeight: 800,
+                  fontSize: '1.5rem',
+                  letterSpacing: '0.04em',
+                  background: 'linear-gradient(135deg, #00d4ff 0%, #a855f7 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  filter: 'drop-shadow(0 0 12px rgba(0,212,255,0.3))',
                 }}
-              />
+              >
+                Priyansh<span style={{ WebkitTextFillColor: 'transparent', background: 'linear-gradient(135deg, #a855f7 0%, #00d4ff 100%)', WebkitBackgroundClip: 'text', fontWeight: 400, letterSpacing: '0.06em' }}>.dev</span>
+              </span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
               Building premium digital experiences with clean code, modern architecture, and pixel-perfect designs. Open to freelance projects and full-time opportunities.

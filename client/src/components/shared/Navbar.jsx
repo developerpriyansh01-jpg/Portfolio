@@ -4,8 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 import { FiDownload } from 'react-icons/fi';
 import { useScrollPosition } from '../../hooks/useScrollPosition';
-const logoImg = '/logo2.jpeg';
-
 
 const navLinks = [
   { label: 'Home', to: '/#hero' },
@@ -66,19 +64,23 @@ export default function Navbar({ onHireMeClick, resumeUrl }) {
     >
       <div className="section-container">
         <div className="flex items-center justify-between h-16 lg:h-18">
-          {/* Logo */}
+          {/* Text Logo */}
           <Link to="/" className="flex items-center gap-2 group" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <img
-                src={logoImg}
-                alt="Priyansh Rajput Logo"
-                className="w-auto h-10 md:h-12 object-contain"
+              <span
                 style={{
-                  mixBlendMode: "screen",
-                  filter: "drop-shadow(0 0 8px #04041a)",
+                  fontFamily: "'Inter', 'Outfit', sans-serif",
+                  fontWeight: 800,
+                  fontSize: '1.5rem',
+                  letterSpacing: '0.04em',
+                  background: 'linear-gradient(135deg, #00d4ff 0%, #a855f7 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  filter: 'drop-shadow(0 0 12px rgba(0,212,255,0.3))',
                 }}
-              />
-
+              >
+                Priyansh<span style={{ WebkitTextFillColor: 'transparent', background: 'linear-gradient(135deg, #a855f7 0%, #00d4ff 100%)', WebkitBackgroundClip: 'text', fontWeight: 400, letterSpacing: '0.06em' }}>.dev</span>
+              </span>
             </motion.div>
           </Link>
 
@@ -128,7 +130,7 @@ export default function Navbar({ onHireMeClick, resumeUrl }) {
               whileTap={{ scale: 0.97 }}
               className="btn-neon text-sm px-5 py-2"
             >
-              🚀 Hire Me
+              ✦ Hire Me
             </motion.button>
           </div>
 
@@ -180,7 +182,7 @@ export default function Navbar({ onHireMeClick, resumeUrl }) {
                   </a>
                 )}
                 <button onClick={() => { setIsOpen(false); onHireMeClick(); }} className="btn-neon flex-1 justify-center text-sm py-2.5">
-                  🚀 Hire Me
+                  ✦ Hire Me
                 </button>
               </div>
             </div>

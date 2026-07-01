@@ -1,6 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
-const logoImg = '/logo2.jpeg';
 
 export default function LoadingScreen({ onComplete }) {
   const [progress, setProgress] = useState(0);
@@ -53,12 +52,22 @@ export default function LoadingScreen({ onComplete }) {
                 className="absolute inset-[-12px] rounded-full"
                 style={{ background: 'conic-gradient(from 0deg, transparent 0deg, #00d4ff 120deg, transparent 240deg, #a855f7 360deg)', opacity: 0.4 }}
               />
-              <img 
-                src={logoImg} 
-                alt="Loading..." 
-                className="w-auto h-16 relative z-10 object-contain" 
-                style={{ mixBlendMode: 'screen', filter: 'drop-shadow(0 0 10px rgba(0,212,255,0.5))' }}
-              />
+              <div className="relative z-10 flex items-center justify-center w-20 h-20 rounded-full"
+                style={{ background: 'rgba(4,4,26,0.8)', border: '1px solid rgba(255,255,255,0.1)' }}>
+                <span
+                  style={{
+                    fontFamily: "'Inter', 'Outfit', sans-serif",
+                    fontWeight: 800,
+                    fontSize: '1.6rem',
+                    background: 'linear-gradient(135deg, #00d4ff 0%, #a855f7 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    letterSpacing: '-0.02em',
+                  }}
+                >
+                  PR
+                </span>
+              </div>
             </motion.div>
 
             {/* Name */}

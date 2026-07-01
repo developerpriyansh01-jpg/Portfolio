@@ -7,7 +7,6 @@ import {
   FiMenu, FiX, FiLayers, FiTool, FiClock,
 } from 'react-icons/fi';
 import { useAuth } from '../context/AuthContext';
-const logoImg = '/logo2.jpeg';
 
 const navItems = [
   { to: '/admin', icon: FiGrid, label: 'Dashboard', end: true },
@@ -57,16 +56,20 @@ export default function AdminLayout() {
       >
         {/* Logo */}
         <div className="p-5 border-b border-white/5 flex items-center gap-3">
-          <img 
-            src={logoImg} 
-            alt="Logo" 
-            className="w-auto h-8 object-contain" 
-            style={{ mixBlendMode: 'screen', filter: 'drop-shadow(0 0 5px rgba(0,212,255,0.4))' }}
-          />
-          <div>
-            <p className="font-heading font-bold text-sm text-white">Admin Panel</p>
-            <p className="text-[10px] text-neon-blue">Priyansh Rajput</p>
-          </div>
+          <span
+            style={{
+              fontFamily: "'Inter', 'Outfit', sans-serif",
+              fontWeight: 800,
+              fontSize: '1.2rem',
+              letterSpacing: '0.04em',
+              background: 'linear-gradient(135deg, #00d4ff 0%, #a855f7 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              filter: 'drop-shadow(0 0 12px rgba(0,212,255,0.3))',
+            }}
+          >
+            Priyansh<span style={{ WebkitTextFillColor: 'transparent', background: 'linear-gradient(135deg, #a855f7 0%, #00d4ff 100%)', WebkitBackgroundClip: 'text', fontWeight: 400, letterSpacing: '0.06em' }}>.dev</span>
+          </span>
         </div>
 
         {/* Nav */}

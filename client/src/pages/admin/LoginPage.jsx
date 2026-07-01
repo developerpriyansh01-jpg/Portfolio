@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { FiMail, FiLock, FiLogIn } from 'react-icons/fi';
 import { useAuth } from '../../context/AuthContext';
-const logoImg = '/logo2.jpeg';
 
 export default function LoginPage() {
   const { login, isAuthenticated, loading } = useAuth();
@@ -38,13 +37,23 @@ export default function LoginPage() {
         <div className="glass-card p-8 rounded-2xl border border-white/10">
           {/* Logo */}
           <div className="flex flex-col items-center mb-8">
-            <motion.div whileHover={{ scale: 1.05, rotate: 5 }}>
-              <img 
-                src={logoImg} 
-                alt="Logo" 
-                className="w-auto h-12 mb-4 object-contain" 
-                style={{ mixBlendMode: 'screen', filter: 'drop-shadow(0 0 8px rgba(0,212,255,0.4))' }}
-              />
+            <motion.div whileHover={{ scale: 1.05, rotate: 2 }}>
+              <span
+                style={{
+                  fontFamily: "'Inter', 'Outfit', sans-serif",
+                  fontWeight: 800,
+                  fontSize: '1.8rem',
+                  letterSpacing: '0.04em',
+                  background: 'linear-gradient(135deg, #00d4ff 0%, #a855f7 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  filter: 'drop-shadow(0 0 12px rgba(0,212,255,0.3))',
+                  display: 'block',
+                  marginBottom: '1rem'
+                }}
+              >
+                Priyansh<span style={{ WebkitTextFillColor: 'transparent', background: 'linear-gradient(135deg, #a855f7 0%, #00d4ff 100%)', WebkitBackgroundClip: 'text', fontWeight: 400, letterSpacing: '0.06em' }}>.dev</span>
+              </span>
             </motion.div>
             <h1 className="font-heading font-bold text-2xl text-white">Admin Login</h1>
             <p className="text-slate-400 text-sm mt-1">Sign in to manage your portfolio</p>
