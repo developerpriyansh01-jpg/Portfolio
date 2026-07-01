@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import logoImg from '/logo.jpeg';
+import logoImg from '/logo2.jpeg';
 
 export default function LoadingScreen({ onComplete }) {
   const [progress, setProgress] = useState(0);

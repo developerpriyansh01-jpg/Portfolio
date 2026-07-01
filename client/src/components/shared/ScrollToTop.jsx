@@ -44,7 +44,7 @@ export default function ScrollToTop() {
             className="relative w-full h-full flex items-center justify-center"
           >
             <img
-              src="/rocket_png"
+              src="/rocket.png"
               alt="Rocket — scroll to top"
               className="w-16 h-16 drop-shadow-[0_0_15px_rgba(0,212,255,0.6)]"
               style={{
